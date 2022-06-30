@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display a 2D map using ESRI js api</title>
+
+    <!-- style: you can use straight out of the box light and dark theme allow ant to mention that you can take full control of the custom CSS and use Sass, sassy widgets would be the most recomended aproach 
+        $font-color: #fff;
+        $background-color: #00704a;
+        $button-color: $background-color;
+        $interactive-font-color: $font-color;
+        $border-color--active: $interactive-font-color;
+        $background-color--active: lighten(#00704a, 25%);-->
+
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.24/esri/themes/light/main.css"
+    />
+    <script src="https://js.arcgis.com/4.24/"></script>
+
+    <!-- require Modules map, mapview and your own API key-->
+    <script>
+      require(["esri/config", "esri/Map", "esri/views/MapView"], function (
+        esriConfig,
+        Map,
+        MapView
+      ) {
+        esriConfig.apiKey =
+          "YOUR_API_KEY"; //replace with your personal KEY
+
+        const map = new Map({
+          basemap: "arcgis-topographic", //Basemap layer service can be
+          //"arcgis-imagery"
+          //"arcgis-terrain"
+        });
+        const view = new MapView({
+          map: map,
+          center: [-75.695, 45.424721], // Longitude, latitude
+          zoom: 15, // Zoom level
+          container: "viewDiv", // Div element
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <h1>Display a 2D map</h1>
+    <div id="viewDiv"></div>
+  </body>
+
+</html>
