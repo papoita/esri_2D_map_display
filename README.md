@@ -1,6 +1,6 @@
 # How to display a 2D map using ESRI javascript API
 
-![2D map display](/docs/img_2d_map_display.png)
+![2D map display](/docs/img_2d_map.png)
 Code following this tutorial:
 
 [Display a map](https://developers.arcgis.com/javascript/latest/display-a-map/)
