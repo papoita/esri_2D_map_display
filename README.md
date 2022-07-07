@@ -5,7 +5,7 @@
 
 ![2Dmap with Custom Label](/docs/custom_label.png)
 
-![2Dmap with Custom Popup ](/docs/custom_label_popup.png)
+![2Dmap with Custom Popup ](/docs/custom_popup.png)
 
 
 Code following these tutorials:
