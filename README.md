@@ -8,6 +8,7 @@
 ![2Dmap with Custom Popup ](/docs/custom_popup.png)
 
 
+
 Code following these tutorials:
 
 [Display a map](https://developers.arcgis.com/javascript/latest/display-a-map/)
@@ -17,6 +18,10 @@ Code following these tutorials:
 * Comments within the code in index.html provide additional details on how to make the most use of tools for displaying a 2D map.
 
 * Code in custom_label_popup.html has the code to make a custom label and custom popup in your 2D map combining two different tutorials from the ArcGIS Developers website.
+
+# 3D map
+For a 3D tutorial you can follow 
+[Display a 3D map](https://developers.arcgis.com/javascript/latest/display-a-scene/)
 
 ## License
 COPYRIGHT © 2021 Esri
